@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Universe Hub</title>
+    <!-- fonts work sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+
+    <!-- header section start  -->
+    <header class="pt-4">
+        <div class="container hed_content text-center">
+            <h2 class="fs-1">AI Universe Hub</h2>
+            <button onclick="sortDate()" class="btn btn-danger p-3 mt-3">Sort By Date</button>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- spinner  -->
+    <section id="loader" class="d-flex text-center align-items-center justify-content-center displayNone" style="height: 200px;">
+        <div class="container">
+            <div class="m-5" role="status">
+                <img class="img-fluid" style="width: 20%; text-align: center;" src="images/loder.gif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="mt-2 pb-5">
+            <div class="container">
+                <div id="allCardContainer" class="main_card row">
+                    <!-- app.js  -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal_parent">
+            <div class="">
+              <button type="button" class="btn-close border-0 cross_Btn" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body p-5">
+              <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card rounded p-5 bg_color" style="height: 100%">
+                        <h3 id="AiDescription">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h3>
+                        <div id="pricingContainer" class="row my-3">
+                            <!-- app.js  -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Features</h3>
+                                <ul id="FeaturesContainer" style="padding-left: 18px">
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Integrations</h3>
+                                <ul id="IntegrationsContainer" style="padding-left: 18px">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card text-center p-4 sm-mt" style="height: 100%">
+                        <div id="aiModalImgBody">
+                            
+                        </div>
+                        <div class="bg-danger accuranc rounded"><span id="accurancy">0</span>% accuracy</div>
+                        <div class="card-body mt-5 pt-5">
+                            <h4 class="card-title" id="modalAiTitle"></h4>
+                            <p id="modalAiDescription"></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- show all btn  -->
+    <section class="text-center mb-5">
+        <div class="container">
+            <button id="SeeMoreBtn" class="btn btn-danger py-3 px-4 d-none">See More</button>
+        </div>
+    </section>
+
+
+    
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

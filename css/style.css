@@ -1,0 +1,44 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.modal_parent{
+    position: relative;
+}
+.cross_Btn {
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	right: -15px;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	top: -18px;
+	color: white;
+	opacity: 100%;
+	cursor: pointer;
+}
+.bg_color{
+    background: rgba(235, 87, 87, 0.05);
+}
+#aiModalImgBody{
+	position: relative;
+}
+.accuranc {
+	position: absolute;
+	right: 45px;
+	top: 45px;
+	padding: 5px 20px;
+	color: white;
+}
+.displayNone{
+	display: none !important;
+}
+
+@media only screen and (max-width: 576px){
+	.responsive_mb {
+		height: 255px !important;
+	}
+	.sm-mt{
+		margin-top: 40px;
+	}
+}
